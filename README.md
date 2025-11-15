@@ -20,6 +20,36 @@ A lightweight, fast, and accurate lane detection system designed for mobile and 
 
 ---
 
+**📁 Project Structure**
+```
+tiny-lane-unet/
+├── scripts/                 # training, inference, generation
+├── models_def/              # tiny UNet model
+├── utils/                   # dataset loaders
+├── data/                    # synthetic dataset
+└── models/                  # saved models
+
+📁 Output folders created automatically
+
+data/
+ └── lanes_synthetic/
+      ├── images/
+      └── masks/
+
+tiny-lane-unet/
+│
+├── scripts/
+│     ├── train_lane.py
+│     ├── gen_lanes.py
+│
+├── models_def/
+│     ├── __init__.py
+│     └── tiny_unet.py
+
+
+```
+
+---
 **Demo**
 
 🧪 Results
